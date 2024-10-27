@@ -1,0 +1,201 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Snell Roundhand', cursive; /* Fonte aplicada globalmente */
+}
+
+/* Estilos do Header */
+header {
+    background-color: #333333; /* Preto suave para o cabeçalho */
+    color: #ffffff;
+    padding: 12px; /* Aumenta um pouco o padding */
+    text-align: center;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+header nav a:hover {
+    color: #a0a0a0; /* Efeito hover em cinza claro */
+}
+
+/* Seção de Destaque */
+.destaque {
+    background-image: url('https://img.freepik.com/fotos-gratis/oficina-de-reparacao-automovel_23-2147897920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 5px solid #000000; /* Linha inferior preta para estilo futurístico */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+
+.texto-sobre-imagem h2 {
+    background: rgba(51, 51, 51, 0.8); /* Fundo semitransparente preto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 3em;
+    text-align: center;
+    color: #333333; /* Texto principal em preto suave */
+}
+
+/* Seção de Serviços */
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em;
+    background-color: #f5f5f5; /* Fundo branco suave */
+}
+
+.servico {
+    margin: 20px;
+    padding: 20px;
+    flex-basis: calc(33% - 40px); /* 3 cartões por linha */
+    max-width: 300px; /* Limitar a largura máxima */
+    background: #e0e0e0; /* Fundo cinza claro */
+    border-radius: 8px;
+    text-align: center;
+    color: #333333;
+    border-top: 5px solid #333333; /* Linha superior preta para estilo */
+}
+
+.servico img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servico h3 {
+    margin-top: 15px;
+    color: #333333;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .servico {
+        flex-basis: calc(50% - 40px); /* 2 cartões por linha */
+    }
+}
+
+@media (max-width: 768px) {
+    .destaque {
+        height: 400px; /* Reduz a altura da seção de destaque */
+    }
+
+    .servico {
+        flex-basis: calc(100% - 40px); /* 1 cartão por linha */
+    }
+
+    .content {
+        padding: 2em; /* Reduz o padding em dispositivos menores */
+    }
+}
+
+/* Estilo dos textos futurísticos */
+.servico h3, .content h2, .texto-sobre-imagem h2 {
+    font-family: 'Snell Roundhand', cursive; /* Fonte aplicada */
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.servico p, .content p {
+    font-family: 'Snell Roundhand', cursive; /* Fonte aplicada */
+    letter-spacing: 0.5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
+
+footer nav a {
+    color: #ffffff; /* Links no footer */
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #a0a0a0; /* Efeito hover em cinza claro */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333333; /* Botão preto */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #555555; /* Cinza escuro no hover */
+}
+
+/* Estilos da seção Sobre */
+.sobre {
+    padding: 2em;
+    text-align: left; /* Alinha o texto à esquerda */
+    background-color: #f5f5f5; /* Fundo branco suave */
+    border: 2px solid #333; /* Borda preta em volta */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    margin: 20px; /* Espaço externo */
+}
+
+.sobre h2 {
+    margin-bottom: 1em;
+    font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
+    font-weight: 700; /* Fonte mais grossa */
+}
+
+.lista-confianca {
+    list-style: none; /* Remove a numeração padrão */
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Fonte mais grossa */
+}
+
+.lista-confianca li {
+    margin: 10px 0; /* Espaço entre os itens da lista */
+}
+
+.quadrado {
+    display: inline-block; /* Permite aplicar estilo ao span */
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-right: 10px; /* Espaço entre os itens */
+}
+
+.sobre p {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte dos parágrafos */
+    font-weight: 400; /* Peso normal da fonte */
+}
+
+img {
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+}
